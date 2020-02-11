@@ -7,8 +7,8 @@ import modelo.Ejercicio1;
 public class AplMain_Ejercicio1 {
 
 	public static void main(String[] args) {
-		
-		Ejercicio1 x= new Ejercicio1(0, 0);
+
+		Ejercicio1 x = new Ejercicio1();
 		/**
 		 * Obtener el numero de procesadores logicos
 		 */
@@ -18,12 +18,8 @@ public class AplMain_Ejercicio1 {
 		System.out.println("------Multiplicacion de matrices-----");
 		System.out.println("\n");
 
-		Random rand = new Random(System.nanoTime());
-
-		
-		
-		
 		Thread[] hilos = new Thread[procesadoresLogicos];
+		x.start();
 	}
 
 }
